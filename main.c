@@ -1,13 +1,12 @@
 #include <stdio.h>
 
-int sumTwo(int a, int b) {
-    return a + b;
+int square(int n) {
+    return n * n;
 }
 
 int main(void) {
     int result;
-    result = sumTwo(5, 10);
-    printf("The sum of 5 and 10 is: %d\n",result);
-
+    result = square(3);
+    printf("The square of 3 is: %d\n", result);
     return 0;
 }
