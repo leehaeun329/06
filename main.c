@@ -1,13 +1,13 @@
 #include <stdio.h>
-void func(void) {
-    int x;
-    printf("func x is at %p\n", &x);
+
+int sumTwo(int a, int b) {
+    return a + b;
 }
 
 int main(void) {
-    int x;
-    printf("main x is at %p\n", &x);
-    func();
+    int result;
+    result = sumTwo(5, 10);
+    printf("The sum of 5 and 10 is: %d\n",result);
 
     return 0;
 }
